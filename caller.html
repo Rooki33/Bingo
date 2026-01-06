@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo Caller</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 40px;
+    }
+    #number {
+      font-size: 80px;
+      margin: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px;
+    }
+     #history-container {
+       margin-top: 40px;
+}
+    #letters span {
+      font-size: 40px;
+      padding: 20px;
+      margin: 5px;
+      border: 2px solid #333;
+}
+.active {
+  background: #4CAF50;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+
+<h1>Bingo Caller</h1>
+<div id="letters">
+  <span id="B">B</span>
+  <span id="I">I</span>
+  <span id="N">N</span>
+  <span id="G">G</span>
+  <span id="O">O</span>
+</div>
+
+<div id="number">—</div>
+
+<button onclick="callNumber()">CALL NEXT</button>
+<button onclick="undo()">UNDO</button>
+
+
+
+<div id="history-container">
+  <div id="history"></div>
+</div>
+
+<script src="caller.js"></script>
+
+</body>
+</html>
